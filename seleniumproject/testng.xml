@@ -3,12 +3,13 @@
 <suite name="Suite">
 <parameter name="browser" value="chrome" />
 	<listeners>
-		<listener class-name="extentreport.TestListeners" />
+		<listener class-name="com.htc.extentreport.TestListeners" />
 	</listeners>
   <test thread-count="5" name="Test">
     <classes>
-   <class name="com.htc.TestPages.TestRegistration"/> 
-     <!-- <class name="com.htc.TestPages.TestLoginToLogout"/>-->
+      <class name="com.htc.TestPages.TestRegistration"/>
+      <class name="com.htc.TestPages.TestLoginToLogout"/>
+      
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
