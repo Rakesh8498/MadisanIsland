@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>C:\Users\RAKESH\Desktop\lab\seleniumproject\testng.xml</span>
+                    <span>C:\Rakesh8498\MadisanIsland\seleniumproject\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">2 methods, 2 failed,   </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -104,7 +104,12 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.htc.TestPages.TestRegistration" hash-for-method="Valid_And_Invalid_Registration({firstname=tom, password=tom123, middlename=and, emailid=tomandjerry@gmail.com, confirmpassword=tom1...)">Valid_And_Invalid_Registration({firstname=tom, password=tom123, middlename=and, emailid=tomandjerry@gmail.com, confirmpassword=tom1...)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.htc.TestPages.TestLoginToLogout" hash-for-method="Valid_And_Invalid_Login({password=tom123, emailid=tomandjerry@gmail.com})">Valid_And_Invalid_Login({password=tom123, emailid=tomandjerry@gmail.com})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.htc.TestPages.TestLoginToLogout" hash-for-method="Valid_And_Invalid_Login({password=rakesh123, emailid=seedbatchhh@gmail.com})">Valid_And_Invalid_Login({password=rakesh123, emailid=seedbatchhh@gmail.com})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -122,26 +127,26 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.htc.TestPages.TestRegistration</span>
+              <span class="class-name">com.htc.TestPages.TestLoginToLogout</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Valid_And_Invalid_Registration({firstname=tom, password=tom123, middlename=and, emailid=tomandjerry@gmail.com, confirmpassword=tom1...)">
-                  </a> <!-- Valid_And_Invalid_Registration({firstname=tom, password=tom123, middlename=and, emailid=tomandjerry@gmail.com, confirmpassword=tom1...) -->
-                  <span class="method-name">Valid_And_Invalid_Registration</span>
-                  <span class="parameters">({firstname=tom, password=tom123, middlename=and, emailid=tomandjerry@gmail.com, confirmpassword=tom123, lastname=jerry})</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[contains(text(),&apos;Thank you for registering with Madison Island.&apos;)]&quot;}
-  (Session info: chrome=88.0.4324.182)
+                  <a name="Valid_And_Invalid_Login({password=tom123, emailid=tomandjerry@gmail.com})">
+                  </a> <!-- Valid_And_Invalid_Login({password=tom123, emailid=tomandjerry@gmail.com}) -->
+                  <span class="method-name">Valid_And_Invalid_Login</span>
+                  <span class="parameters">({password=tom123, emailid=tomandjerry@gmail.com})</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;qty&apos;]&quot;}
+  (Session info: chrome=88.0.4324.190)
   (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;SOMAIAH&apos;, ip: &apos;192.168.43.212&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+System info: host: &apos;SOMAIAH&apos;, ip: &apos;192.168.0.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\RAKESH\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:65520}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 88.0.4324.182, webStorageEnabled: true}
-Session ID: 170adc6dfb6fe42871ef107cc37773ad
-*** Element info: {Using=xpath, value=//span[contains(text(),&apos;Thank you for registering with Madison Island.&apos;)]}
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\RAKESH\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:59532}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 88.0.4324.190, webStorageEnabled: true}
+Session ID: f23077caa380ae693f9842a3e48fa036
+*** Element info: {Using=xpath, value=//input[@id=&apos;qty&apos;]}
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
 	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
@@ -156,9 +161,50 @@ Session ID: 170adc6dfb6fe42871ef107cc37773ad
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy12.getText(Unknown Source)
-	at pages.Registration.assertcheckBy(Registration.java:61)
-	at com.htc.TestPages.TestRegistration.Valid_And_Invalid_Registration(TestRegistration.java:26)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at com.htc.pages.CartPage.selectproduct(CartPage.java:41)
+	at com.htc.TestPages.TestLoginToLogout.Valid_And_Invalid_Login(TestLoginToLogout.java:23)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Valid_And_Invalid_Login({password=rakesh123, emailid=seedbatchhh@gmail.com})">
+                  </a> <!-- Valid_And_Invalid_Login({password=rakesh123, emailid=seedbatchhh@gmail.com}) -->
+                  <span class="method-name">Valid_And_Invalid_Login</span>
+                  <span class="parameters">({password=rakesh123, emailid=seedbatchhh@gmail.com})</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//select[@id=&apos;country&apos;]&quot;}
+  (Session info: chrome=88.0.4324.190)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;SOMAIAH&apos;, ip: &apos;192.168.0.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\RAKESH\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:59532}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 88.0.4324.190, webStorageEnabled: true}
+Session ID: f23077caa380ae693f9842a3e48fa036
+*** Element info: {Using=xpath, value=//select[@id=&apos;country&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy11.getTagName(Unknown Source)
+	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:45)
+	at com.htc.utility.UtilClass.dropdown(UtilClass.java:23)
+	at com.htc.pages.ShoppingCartPage.setAddress(ShoppingCartPage.java:33)
+	at com.htc.TestPages.TestLoginToLogout.Valid_And_Invalid_Login(TestLoginToLogout.java:25)
 	at java.util.ArrayList.forEach(Unknown Source)
 ... Removed 31 stack frames
 </div> <!-- stack-trace -->
@@ -169,7 +215,7 @@ Session ID: 170adc6dfb6fe42871ef107cc37773ad
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\RAKESH\Desktop\lab\seleniumproject\testng.xml</span>
+            <span class="header-content">C:\Rakesh8498\MadisanIsland\seleniumproject\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -178,11 +224,11 @@ Session ID: 170adc6dfb6fe42871ef107cc37773ad
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
   &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
   &lt;listeners&gt;
-    &lt;listener class-name=&quot;extentreport.TestListeners&quot;/&gt;
+    &lt;listener class-name=&quot;com.htc.extentreport.TestListeners&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.htc.TestPages.TestRegistration&quot;/&gt;
+      &lt;class name=&quot;com.htc.TestPages.TestLoginToLogout&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -222,16 +268,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Valid_And_Invalid_Registration')
-data.setCell(0, 2, 'com.htc.TestPages.TestRegistration')
-data.setCell(0, 3, 17050);
+data.setCell(0, 1, 'Valid_And_Invalid_Login')
+data.setCell(0, 2, 'com.htc.TestPages.TestLoginToLogout')
+data.setCell(0, 3, 32601);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'Valid_And_Invalid_Login')
+data.setCell(1, 2, 'com.htc.TestPages.TestLoginToLogout')
+data.setCell(1, 3, 16730);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 17 seconds</span>
+              <span class="suite-total-time">Total running time: 49 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -257,28 +307,34 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.htc.TestPages.TestRegistration</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.htc.TestPages.TestLoginToLogout</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">start(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
-              <div class="configuration-test before">
-                <span class="method-name">getdriver</span>
-                <span class="method-start">56020 ms</span>
-              </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">browserSetup</span>
-                <span class="method-start">56143 ms</span>
+                <span class="method-start">17085 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">Valid_And_Invalid_Registration({firstname=tom, password=tom123, middlename=and, emailid=tomandjerry@gmail.com, confirmpassword=tom1...)</span>
-                <span class="method-start">67001 ms</span>
+                <span class="method-name">Valid_And_Invalid_Login({password=tom123, emailid=tomandjerry@gmail.com})</span>
+                <span class="method-start">18265 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">takescreenshot([TestResult name=Valid_And_Invalid_Registration status=FAILURE method=TestRegistration.Valid_And_Inv...)</span>
-                <span class="method-start">87747 ms</span>
+                <span class="method-name">takescreenshot([TestResult name=Valid_And_Invalid_Login status=FAILURE method=TestLoginToLogout.Valid_And_Invalid_L...)</span>
+                <span class="method-start">54207 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Valid_And_Invalid_Login({password=rakesh123, emailid=seedbatchhh@gmail.com})</span>
+                <span class="method-start">54212 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takescreenshot([TestResult name=Valid_And_Invalid_Login status=FAILURE method=TestLoginToLogout.Valid_And_Invalid_L...)</span>
+                <span class="method-start">74423 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

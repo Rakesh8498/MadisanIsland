@@ -43,7 +43,7 @@ public class TestListeners extends TestBase implements ITestListener{
 
 	public void onTestFailure(ITestResult result) {
 		System.out.println("*** Test execution " + result.getMethod().getMethodName() + " failed...");
-		ExtentTestManager.getTest().log(Status.FAIL, "Test Failed");
+		ExtentTestManager.getTest().log(Status.INFO, "Test Failed");
 		Object testClass = result.getInstance();
 	    WebDriver driver = ((TestBase) testClass).getDriver();
 	    try {

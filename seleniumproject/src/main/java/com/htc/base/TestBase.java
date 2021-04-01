@@ -19,6 +19,7 @@ import com.htc.pages.BillingPage;
 import com.htc.pages.CartPage;
 import com.htc.pages.HomePage;
 import com.htc.pages.Login;
+import com.htc.pages.LogoutPage;
 import com.htc.pages.OrderConfirmationpage;
 import com.htc.pages.ProductsListPage;
 import com.htc.pages.ShoppingCartPage;
@@ -33,6 +34,7 @@ public class TestBase {
 	protected ShoppingCartPage shopping = null;
 	protected BillingPage billing = null;
 	protected OrderConfirmationpage confirm = null;
+	protected LogoutPage logout=null;
 
 	protected ScreenShot screenshot = null;
 
@@ -74,27 +76,24 @@ public class TestBase {
 		shopping = new ShoppingCartPage(driver);
 		billing = new BillingPage(driver);
 		confirm = new OrderConfirmationpage(driver);
+		logout =new LogoutPage(driver);
 	}
 
-	@BeforeTest
-	public WebDriver getdriver() {
-		return this.driver;
-
-	}
-
+	/*
+	 * @BeforeTest public WebDriver getdriver() { return this.driver;
+	 * 
+	 * }
+	 */
 	public WebDriver getDriver() {
 		return this.driver;
 	}
 
 	@AfterMethod
 	public void takescreenshot(ITestResult result) throws IOException, InterruptedException {
-		System.out.println("in side aftertest");
-		if (ITestResult.FAILURE == result.getStatus()) {
-			ScreenShot.screenShot(driver, Constants.SCREENSHOT_FAIL,result.getMethod().getMethodName());
+		
+		 if (ITestResult.SUCCESS == result.getStatus()) {
 			
-		} else if (ITestResult.SUCCESS == result.getStatus()) {
-			ScreenShot.screenShot(driver, Constants.SCREENSHOT_PASS,result.getMethod().getMethodName());
-			login.Logout();
+			logout.Logout();
 		}
 		
 	}

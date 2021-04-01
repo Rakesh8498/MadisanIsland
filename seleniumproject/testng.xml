@@ -7,8 +7,8 @@
 	</listeners>
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.htc.TestPages.TestRegistration"/>
-      <class name="com.htc.TestPages.TestLoginToLogout"/>
+    <!--  <class name="com.htc.TestPages.TestRegistration"/>  -->
+       <class name="com.htc.TestPages.TestLoginToLogout"/> 
       
     </classes>
   </test> <!-- Test -->

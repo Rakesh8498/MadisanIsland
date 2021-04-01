@@ -32,8 +32,8 @@ public class HomePage {
 			searchproducts.click();
 			searchproducts.sendKeys(search);
 			clicksearch.click();
-		} catch (NoSuchElementException exception) {
-			System.out.println(exception.getStackTrace());
+		} catch (Exception exception) {
+		exception.printStackTrace();
 		}
 	}
 

@@ -41,9 +41,8 @@ public class Login {
 			emailidBy.sendKeys(email);
 			passwordBy.sendKeys(password);
 			loginbuttonBy.click();
-			//LogoutPage.Logout();
-		} catch (NoSuchElementException exception) {
-			System.out.println(exception.getStackTrace());
+		} catch (Exception exception) {
+			exception.printStackTrace();
 		}
 
 	}
@@ -56,9 +55,6 @@ public class Login {
 		return assertcheckBy.getText();
 	}
 
-	public void Logout() {
-		accountBy.click();
-		logoutbuttonBy.click();
-	}
+	
 
 }

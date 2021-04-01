@@ -3,19 +3,18 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <parameter name="browser" value="chrome"/>
   <listeners>
-    <listener class-name="extentreport.TestListeners"/>
+    <listener class-name="com.htc.extentreport.TestListeners"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.htc.TestPages.TestRegistration">
+      <class name="com.htc.TestPages.TestLoginToLogout">
         <methods>
-          <include name="getdriver"/>
+          <include name="start"/>
+          <include name="Valid_And_Invalid_Login" invocation-numbers="0 1"/>
           <include name="browserSetup"/>
           <include name="takescreenshot"/>
-          <include name="start"/>
-          <include name="Valid_And_Invalid_Registration" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.htc.TestPages.TestRegistration -->
+      </class> <!-- com.htc.TestPages.TestLoginToLogout -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

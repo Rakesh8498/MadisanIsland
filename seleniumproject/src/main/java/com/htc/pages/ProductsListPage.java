@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class ProductsListPage {
 	private WebDriver driver = null;
-	@FindBy(xpath = "(//a[@title='Silver Desert Necklace'])[2]")
+	@FindBy(xpath = "(//*[@class='products-grid products-grid--max-3-col first last odd']/li/a)[1]")
 	private WebElement productBy;
 
 	public ProductsListPage(WebDriver driver) {
@@ -20,8 +20,8 @@ public class ProductsListPage {
 	public void selectproductBy() {
 		try {
 			productBy.click();
-		} catch (NoSuchElementException exception) {
-			System.out.println(exception.getStackTrace());
+		} catch ( Exception exception) {
+			exception.printStackTrace();
 		}
 	}
 }
